@@ -12,12 +12,12 @@ function openTab(tabName) {
 </script>
 <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script><script src="https://wow.zamimg.com/widgets/power.js"></script>
 <style>
-   html { background-color: #123; background: url(https://media.giphy.com/media/13gvXfEVlxQjDO/giphy.gif) };
+html { background-color: #000; background: url(https://media.giphy.com/media/13gvXfEVlxQjDO/giphy.gif) };
 .divTable{ display: table; float: left; margin: 10px 10px; }
 .divTableRow { display: table-row; background-color: #000}
 .divTableRoww { display: table-row; background-color: #000}
-.divTableRow:hover { background-color: #999999; }
-.divTableHeading { background-color: #999999; display: table-header-group; }
+.divTableRow:hover { background-color: #222; }
+.divTableHeading { background-color: #EEE; display: table-header-group; }
 .divTableCell, .divTableHead { border: 1px solid #999999; display: table-cell; padding: 3px 10px; }
 .divPlayer { border: 1px solid #999999; display: table-cell; width: 700px; padding: 3px 10px; text-align: left; vertical-align: middle; word-wrap: normal; color: #ffffff; }
 .divClass { border: 1px solid #999999; display: table-cell; padding: 3px 10px; text-align: center; vertical-align: middle; color: #ffffff; }
@@ -25,30 +25,44 @@ function openTab(tabName) {
 .divPlayerHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 50%; padding: 3px 10px; text-align: left; background-color: #bbb; }
 .divClassHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 150px; padding: 3px 10px; text-align: center; background-color: #bbb; }
 .divDKPHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 30%; padding: 3px 10px; text-align: center; background-color: #bbb; }
-.divTableHeading { background-color: #999999; display: table-header-group; font-weight: bold; }
-.divTableFoot { background-color: #999999; display: table-footer-group; font-weight: bold; }
+.divTableHeading { background-color: #EEE; display: table-header-group; font-weight: bold; }
+.divTableFoot { background-color: #EEE; display: table-footer-group; font-weight: bold; }
 .divTableBody { display: table-row-group; }
-   h1 {
-  font-family: Monotype Corsiva, cursive;
-}
-a:link, a:visited { color:black; }
+ h1 {font-family: Monotype Corsiva, cursive;}
+ a:link, a:visited { color:black; }
 </style>
-<div style="text-align:center; margin-top:2%;"><h1>DKP "Без Негатива" by Keevo</h1></div>
-<br /><br />
+
+<div style="text-align:center; margin-top:2%;"><h1>DKP "Без Негатива" by Keevo</h1></div> <br /><br />
 <div style="text-align:center;">
    <button onclick="openTab('DKP')">Таблица ДКП</button>
    <button onclick="openTab('DKPHistory')">История ДКП</button>
    <button onclick="openTab('LootHistory')">История лута</button>
    <button onclick="openTab('Rules')">Правила</button>
    <button onclick="openTab('Bank')">Гильдбанк</button>
+ <button onclick="openTab('Statics')">Статики</button>
 </div>
-<br /><br />
-<div id="DKP" class="tab"><div class="divTable" style="width: 30%;border: 1px solid #000; margin:auto;" > <a name="dkptablee"></a>
+ <br /><br   />
+<div id="DKP" class="tab"><div class="divTable" style="width: 30%;border: 1px solid #000; margin: auto;">
    <div class="divTableBody">
       <div class="divTableRow">
          <div class="divPlayerHeader">Игрок</div>
          <div class="divClassHeader">Класс</div>
          <div class="divDKPHeader">ДКП</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Авэйк</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">250</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Айтизи</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">210</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Акентич</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">340</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Аластесс</div>
@@ -63,17 +77,32 @@ a:link, a:visited { color:black; }
       <div class="divTableRow">
          <div class="divPlayer">Антикусь</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
-         <div class="divDKP">340</div>
+         <div class="divDKP">400</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Аравуд</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">90</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Аургелмир</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">160</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Баккун</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">260</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Басло</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
          <div class="divDKP">200</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Батеслав</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
-         <div class="divDKP">320</div>
+         <div class="divDKP">440</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Бига</div>
@@ -81,224 +110,359 @@ a:link, a:visited { color:black; }
          <div class="divDKP">290</div>
       </div>
       <div class="divTableRow">
+         <div class="divPlayer">Богданыч</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">200</div>
+      </div>
+      <div class="divTableRow">
          <div class="divPlayer">Брюшкин</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
-         <div class="divDKP">70</div>
+         <div class="divDKP">150</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Бэндр</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
-         <div class="divDKP">230</div>
+         <div class="divDKP">330</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Вазарчик</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">100</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Вензо</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
-         <div class="divDKP">260</div>
+         <div class="divDKP">250</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Вердми</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
-         <div class="divDKP">340</div>
+         <div class="divDKP">490</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Вискарёк</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">140</div>
+         <div class="divDKP">160</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Водаедапорта</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">170</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Восьмибитка</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">270</div>
+         <div class="divDKP">420</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Гевертиз</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">10</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Гирам</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">260</div>
+         <div class="divDKP">410</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Гномчиха</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
-         <div class="divDKP">380</div>
+         <div class="divDKP">390</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Горегоре</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
-         <div class="divDKP">420</div>
+         <div class="divDKP">570</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Грейвс</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">190</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Гудпит</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">120</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Давидд</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">110</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Дежавю</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">280</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Деспбелый</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
-         <div class="divDKP">190</div>
+         <div class="divDKP">290</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Джигуро</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">130</div>
+         <div class="divDKP">220</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Дисциплинка</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">90</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Дридикус</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">280</div>
+         <div class="divDKP">410</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Дуплоша</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">210</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Заокном</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
-         <div class="divDKP">540</div>
+         <div class="divDKP">230</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Зиха</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">140</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Иввиготапова</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
-         <div class="divDKP">90</div>
+         <div class="divDKP">70</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Иеронимус</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">190</div>
+         <div class="divDKP">170</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Изжигатель</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">260</div>
+         <div class="divDKP">220</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Иммодест</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">270</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Инканус</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">150</div>
+         <div class="divDKP">120</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Кагранак</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
-         <div class="divDKP">240</div>
+         <div class="divDKP">210</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Кадуин</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">160</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Кальвагор</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">180</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Картошечька</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
-         <div class="divDKP">210</div>
+         <div class="divDKP">360</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Кенканеки</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">130</div>
+         <div class="divDKP">260</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Кивасик</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
-         <div class="divDKP">260</div>
+         <div class="divDKP">390</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Киво</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">180</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Кризби</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
-         <div class="divDKP">190</div>
+         <div class="divDKP">70</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Кринжлорд</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">250</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Лайкэбосс</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">130</div>
+         <div class="divDKP">280</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Ласковский</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
-         <div class="divDKP">280</div>
+         <div class="divDKP">320</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Лейкопластер</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
-         <div class="divDKP">80</div>
+         <div class="divDKP">60</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Лизана</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">200</div>
+         <div class="divDKP">330</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Луриел</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">170</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Майами</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
+         <div class="divDKP">220</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Малышуня</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
-         <div class="divDKP">260</div>
+         <div class="divDKP">140</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Мартел</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
-         <div class="divDKP">280</div>
+         <div class="divDKP">430</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Миклухо</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
-         <div class="divDKP">300</div>
+         <div class="divDKP">50</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Миракурун</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">430</div>
+         <div class="divDKP">470</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Мисфорнойд</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
+         <div class="divDKP">190</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Митруд</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
-         <div class="divDKP">380</div>
+         <div class="divDKP">530</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Мкз</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">260</div>
+         <div class="divDKP">410</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Мункоша</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
-         <div class="divDKP">390</div>
+         <div class="divDKP">540</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Наукраине</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">220</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Нахадан</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">130</div>
+         <div class="divDKP">200</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Нейр</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
-         <div class="divDKP">180</div>
+         <div class="divDKP">310</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Непарься</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">300</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Нескоро</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">80</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Овнаж</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
          <div class="divDKP">130</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Огнегном</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">200</div>
+         <div class="divDKP">330</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Остапблендр</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">240</div>
+         <div class="divDKP">170</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Паспарту</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">340</div>
+         <div class="divDKP">280</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Праймлайт</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">140</div>
+         <div class="divDKP">220</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Психбольная</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">80</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Пуканка</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">10</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Равиоло</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
-         <div class="divDKP">220</div>
+         <div class="divDKP">170</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Раинам</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">170</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Реалкек</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">190</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Редл</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">30</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Рептайлик</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
-         <div class="divDKP">210</div>
+         <div class="divDKP">340</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Рикардс</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">130</div>
+         <div class="divDKP">200</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Рифтшот</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
-         <div class="divDKP">160</div>
+         <div class="divDKP">180</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Роксена</div>
@@ -308,57 +472,77 @@ a:link, a:visited { color:black; }
       <div class="divTableRow">
          <div class="divPlayer">Рохейн</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
-         <div class="divDKP">240</div>
+         <div class="divDKP">260</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Рыжийвеликан</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">120</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Савьер</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">270</div>
+         <div class="divDKP">430</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Саллии</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">210</div>
+         <div class="divDKP">370</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Святоносик</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
-         <div class="divDKP">300</div>
+         <div class="divDKP">450</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Сейюш</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
-         <div class="divDKP">220</div>
+         <div class="divDKP">250</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Серёжа</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
-         <div class="divDKP">420</div>
+         <div class="divDKP">570</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Сквоол</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
-         <div class="divDKP">150</div>
+         <div class="divDKP">280</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Скормакс</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">230</div>
+         <div class="divDKP">380</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Сладкийгусь</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
-         <div class="divDKP">290</div>
+         <div class="divDKP">150</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Смертничище</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">250</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Соседавгн</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">280</div>
+         <div class="divDKP">150</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Сторге</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">100</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Страдалица</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">160</div>
+         <div class="divDKP">290</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Суперолд</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
+         <div class="divDKP">80</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Тацумаки</div>
@@ -368,47 +552,67 @@ a:link, a:visited { color:black; }
       <div class="divTableRow">
          <div class="divPlayer">Технодиджей</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
-         <div class="divDKP">320</div>
+         <div class="divDKP">430</div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer">Уэйн</div>
-         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">320</div>
+         <div class="divPlayer">Томадейра</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">210</div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer">Флексид</div>
-         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
-         <div class="divDKP">270</div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer">Фочереп</div>
-         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
-         <div class="divDKP">170</div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer">Фэксорка</div>
+         <div class="divPlayer">Триха</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
          <div class="divDKP">140</div>
       </div>
       <div class="divTableRow">
+         <div class="divPlayer">Уэйн</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">470</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Фелес</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">220</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Флексид</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">420</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Фочереп</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">140</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Фэксорка</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">270</div>
+      </div>
+      <div class="divTableRow">
          <div class="divPlayer">Харукосама</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
-         <div class="divDKP">80</div>
+         <div class="divDKP">210</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Хьюджан</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">350</div>
+         <div class="divDKP">500</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Цапнузапопку</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">170</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Чезара</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
-         <div class="divDKP">390</div>
+         <div class="divDKP">550</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Чилл</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
-         <div class="divDKP">260</div>
+         <div class="divDKP">110</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Ындиго</div>
@@ -421,14 +625,24 @@ a:link, a:visited { color:black; }
          <div class="divDKP">130</div>
       </div>
       <div class="divTableRow">
+         <div class="divPlayer">Эшкерее</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">150</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Эщкерёночек</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">90</div>
+      </div>
+      <div class="divTableRow">
          <div class="divPlayer">Яойщик</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
-         <div class="divDKP">170</div>
+         <div class="divDKP">210</div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer">Яойщица</div>
          <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
-         <div class="divDKP">130</div>
+         <div class="divDKP">200</div>
       </div>
    </div>
 </div>
@@ -441,209 +655,1004 @@ a:link, a:visited { color:black; }
          <div class="divDKPHeader">Дата/Причина</div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Харукосама, </div>
-         <div class="divClass" style="width: 4%;">-140</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - кольцо<br />(10/16/19 20:33:12) </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">-70</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/26/19 02:30:40) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Брюшкин, </div>
-         <div class="divClass" style="width: 4%;">-190</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - кольцо<br />(10/16/19 20:32:22) </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">70</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/26/19 02:30:03) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Фочереп, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Смертничище, Киво, Триха, Богданыч, Рыжийвеликан, Фелес, Гудпит, Кальвагор, Басло, Дуплоша, Наукраине, Реалкек, Дежавю, Авэйк, Баккун, Водаедапорта, Грейвс, Айтизи, Яойщик, Суперолд, Мисфорнойд, Майами, Овнаж, Вазарчик, Луриел, Дисциплинка, Иммодест, Томадейра, Акентич, Цапнузапопку, Кринжлорд, Деспбелый, Непарься, Раинам, Эшкерее, Кадуин, Гномчиха, Эщкерёночек, Давидд, Паспарту, </div>
+         <div class="divClass" style="width: 4%;">110</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Завершение рейда<br />(10/26/19 01:40:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Вазарчик, </div>
          <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - кольцо<br />(10/16/19 20:31:13) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Другое - Око<br />(10/26/19 01:01:04) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Заокном, Мункоша, Чезара, Миклухо, Уэйн, Хьюджан, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Дисциплинка, </div>
+         <div class="divClass" style="width: 4%;">-20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Расплавленное ядро: Гееннас<br />(10/25/19 22:31:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Паспарту, </div>
          <div class="divClass" style="width: 4%;">10</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - банк<br />(10/16/19 19:31:03) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Другое - Банк<br />(10/25/19 21:44:39) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Роксена, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Баккун, </div>
          <div class="divClass" style="width: 4%;">10</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - замена<br />(10/12/19 23:57:14) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Другое - Банк<br />(10/25/19 21:44:36) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Роксена, </div>
-         <div class="divClass" style="width: 4%;">40</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - замена<br />(10/12/19 23:56:57) </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Непарься, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/25/19 21:40:44) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Равиоло, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Наукраине, </div>
+         <div class="divClass" style="width: 4%;">110</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/25/19 21:39:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Дуплоша, </div>
+         <div class="divClass" style="width: 4%;">100</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/25/19 21:39:20) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Иммодест, </div>
+         <div class="divClass" style="width: 4%;">300</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/25/19 21:39:16) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Кадуин, </div>
+         <div class="divClass" style="width: 4%;">50</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/25/19 21:39:10) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Дежавю, </div>
+         <div class="divClass" style="width: 4%;">170</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/25/19 21:39:06) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Овнаж, </div>
+         <div class="divClass" style="width: 4%;">20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/25/19 21:38:53) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Вазарчик, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/25/19 21:38:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Вазарчик, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/25/19 21:38:14) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Кальвагор, </div>
+         <div class="divClass" style="width: 4%;">70</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 01:08:34) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Басло, </div>
+         <div class="divClass" style="width: 4%;">90</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:03:51) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рыжийвеликан, </div>
+         <div class="divClass" style="width: 4%;">70</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:03:42) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Гудпит, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:03:38) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Лейкопластер, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:03:33) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Фелес, </div>
+         <div class="divClass" style="width: 4%;">20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:03:26) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Триха, </div>
+         <div class="divClass" style="width: 4%;">90</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:03:11) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Богданыч, </div>
+         <div class="divClass" style="width: 4%;">90</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:03:06) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">-10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:02:59) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Эшкерее, </div>
+         <div class="divClass" style="width: 4%;">80</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:02:20) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Раинам, </div>
+         <div class="divClass" style="width: 4%;">240</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:02:15) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Сторге, </div>
+         <div class="divClass" style="width: 4%;">100</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:02:09) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Акентич, </div>
+         <div class="divClass" style="width: 4%;">230</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:01:56) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Деспбелый, </div>
+         <div class="divClass" style="width: 4%;">20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:01:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Цапнузапопку, </div>
+         <div class="divClass" style="width: 4%;">60</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:01:18) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Зиха, </div>
+         <div class="divClass" style="width: 4%;">140</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:01:14) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Кринжлорд, </div>
+         <div class="divClass" style="width: 4%;">140</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:01:09) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Луриел, </div>
+         <div class="divClass" style="width: 4%;">100</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:00:39) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Яойщик, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:00:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Мисфорнойд, </div>
+         <div class="divClass" style="width: 4%;">100</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:00:25) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Суперолд, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:00:17) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Майами, </div>
+         <div class="divClass" style="width: 4%;">110</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/24/19 00:00:09) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Редл, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:59:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Смертничище, </div>
+         <div class="divClass" style="width: 4%;">140</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:59:20) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Психбольная, </div>
+         <div class="divClass" style="width: 4%;">80</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:59:07) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рикардс, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:58:59) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Эщкерёночек, </div>
+         <div class="divClass" style="width: 4%;">60</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:58:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Томадейра, </div>
+         <div class="divClass" style="width: 4%;">100</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:57:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Нескоро, </div>
+         <div class="divClass" style="width: 4%;">80</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:57:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Аравуд, </div>
+         <div class="divClass" style="width: 4%;">90</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:57:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Айтизи, </div>
+         <div class="divClass" style="width: 4%;">100</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:57:21) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Баккун, </div>
+         <div class="divClass" style="width: 4%;">140</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:55:56) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Реалкек, </div>
+         <div class="divClass" style="width: 4%;">140</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:55:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Водаедапорта, </div>
+         <div class="divClass" style="width: 4%;">60</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:55:38) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Пуканка, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:55:31) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Грейвс, </div>
+         <div class="divClass" style="width: 4%;">80</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:55:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Авэйк, </div>
+         <div class="divClass" style="width: 4%;">140</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:55:23) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Гевертиз, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/23/19 23:55:17) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Фелес, </div>
+         <div class="divClass" style="width: 4%;">90</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Начисление DKP<br />(10/22/19 14:01:01) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Яойщица, </div>
+         <div class="divClass" style="width: 4%;">70</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:24:28) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Яойщик, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:24:24) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Яойщик, </div>
+         <div class="divClass" style="width: 4%;">50</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:24:21) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Чилл, </div>
+         <div class="divClass" style="width: 4%;">-150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:24:08) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Чезара, </div>
+         <div class="divClass" style="width: 4%;">160</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:24:02) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Хьюджан, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:23:56) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Харукосама, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:23:51) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Фэксорка, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:23:34) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Фочереп, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:23:28) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Фочереп, </div>
+         <div class="divClass" style="width: 4%;">-40</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:23:23) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Флексид, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:23:17) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Уэйн, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:23:12) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Технодиджей, </div>
+         <div class="divClass" style="width: 4%;">110</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:23:05) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Страдалица, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:22:54) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Соседавгн, </div>
+         <div class="divClass" style="width: 4%;">-130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:22:45) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Сладкийгусь, </div>
+         <div class="divClass" style="width: 4%;">-140</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:22:25) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Скормакс, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:22:15) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Сквоол, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:22:07) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Серёжа, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:22:03) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Сейюш, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:21:59) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Святоносик, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:21:53) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Саллии, </div>
+         <div class="divClass" style="width: 4%;">160</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:21:33) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Савьер, </div>
+         <div class="divClass" style="width: 4%;">160</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:21:28) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рохейн, </div>
+         <div class="divClass" style="width: 4%;">20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:21:21) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рифтшот, </div>
+         <div class="divClass" style="width: 4%;">20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:21:12) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рикардс, </div>
+         <div class="divClass" style="width: 4%;">60</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:21:08) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рептайлик, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:20:55) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Равиоло, </div>
+         <div class="divClass" style="width: 4%;">-50</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:20:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Праймлайт, </div>
+         <div class="divClass" style="width: 4%;">80</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:20:41) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Паспарту, </div>
+         <div class="divClass" style="width: 4%;">-50</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:20:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Остапблендр, </div>
+         <div class="divClass" style="width: 4%;">-70</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:20:16) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Огнегном, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:20:05) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Непарься, </div>
+         <div class="divClass" style="width: 4%;">50</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:20:01) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Нейр, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:19:58) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Нахадан, </div>
+         <div class="divClass" style="width: 4%;">70</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:19:47) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Мункоша, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:19:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Мкз, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:19:06) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миракурун, </div>
          <div class="divClass" style="width: 4%;">40</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - оня + рагна<br />(10/12/19 23:56:42) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:18:52) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, </div>
+         <div class="divClass" style="width: 4%;">-250</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:18:43) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Мартел, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:18:31) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Малышуня, </div>
+         <div class="divClass" style="width: 4%;">-120</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:18:12) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Лизана, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:17:58) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Лейкопластер, </div>
+         <div class="divClass" style="width: 4%;">-30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:17:53) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Ласковский, </div>
+         <div class="divClass" style="width: 4%;">40</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:17:44) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Лайкэбосс, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:17:26) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Кризби, </div>
+         <div class="divClass" style="width: 4%;">-120</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:17:17) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">-70</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:17:12) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">110</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:17:04) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">80</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:16:57) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">-120</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:16:50) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Кивасик, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:16:35) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Кенканеки, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:16:28) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Картошечька, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:16:13) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Кагранак, </div>
+         <div class="divClass" style="width: 4%;">-30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:16:06) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Инканус, </div>
+         <div class="divClass" style="width: 4%;">-30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:15:50) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Изжигатель, </div>
+         <div class="divClass" style="width: 4%;">-40</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:15:34) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Иеронимус, </div>
+         <div class="divClass" style="width: 4%;">-20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:15:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Иввиготапова, </div>
+         <div class="divClass" style="width: 4%;">-20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:15:20) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Заокном, </div>
+         <div class="divClass" style="width: 4%;">-310</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:15:08) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Дридикус, </div>
+         <div class="divClass" style="width: 4%;">130</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:14:58) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Джигуро, </div>
+         <div class="divClass" style="width: 4%;">90</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:14:44) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Деспбелый, </div>
+         <div class="divClass" style="width: 4%;">-30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:14:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Гномчиха, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:14:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Гирам, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:13:06) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Восьмибитка, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:12:47) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Вискарёк, </div>
+         <div class="divClass" style="width: 4%;">20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:12:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Вердми, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:12:26) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Вензо, </div>
+         <div class="divClass" style="width: 4%;">-10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:12:19) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Бэндр, </div>
+         <div class="divClass" style="width: 4%;">100</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:12:13) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Брюшкин, </div>
+         <div class="divClass" style="width: 4%;">80</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:12:05) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Батеслав, </div>
+         <div class="divClass" style="width: 4%;">120</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:11:38) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Аургелмир, </div>
+         <div class="divClass" style="width: 4%;">-40</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:11:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Антикусь, </div>
+         <div class="divClass" style="width: 4%;">60</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:11:12) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Аластесс, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 13:10:57) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">-760</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 08:53:24) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Горегоре, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 08:52:59) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Митруд, </div>
+         <div class="divClass" style="width: 4%;">150</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Исправление ошибки<br />(10/22/19 08:08:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:49) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:47) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:47) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:45) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:45) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:44) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:44) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:44) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:43) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Киво, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/20/19 06:02:43) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Киво, </div>
+         <div class="divClass" style="width: 4%;">1000</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Другие - 123<br />(10/20/19 05:58:07) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:42) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:42) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:41) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:41) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:41) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:40) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:40) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:40) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:39) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:39) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:39) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:39) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:38) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:38) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:38) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:38) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Миклухо, Картошечька, Лизана, Технодиджей, Святоносик, Иввиготапова, Флексид, Паспарту, Горегоре, Батеслав, Гномчиха, Равиоло, Заокном, Кенканеки, Мартел, Чезара, Митруд, Серёжа, Брюшкин, Бига, Хьюджан, Остапблендр, Иеронимус, Инканус, Савьер, Рептайлик, Скормакс, Соседавгн, Харукосама, Страдалица, Восьмибитка, Праймлайт, Вердми, Фочереп, Рохейн, Антикусь, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Бонус за интервал времени<br />(10/19/19 20:18:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Харукосама, </div>
+         <div class="divClass" style="width: 4%;">-140</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - кольцо<br />(10/16/19 20:33:12) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Брюшкин, </div>
+         <div class="divClass" style="width: 4%;">-190</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - кольцо<br />(10/16/19 20:32:22) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Фочереп, </div>
+         <div class="divClass" style="width: 4%;">-20</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - кольцо<br />(10/16/19 20:31:13) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Заокном, Мункоша, Чезара, Миклухо, Уэйн, Хьюджан, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - банк<br />(10/16/19 19:31:03) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Роксена, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - замена<br />(10/12/19 23:57:14) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Роксена, </div>
+         <div class="divClass" style="width: 4%;">40</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - замена<br />(10/12/19 23:56:57) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Равиоло, </div>
+         <div class="divClass" style="width: 4%;">40</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - оня + рагна<br />(10/12/19 23:56:42) </div>
       </div>
       <div class="divTableRow">
          <div class="divPlayer" style="font-size: 1em; width: 71%;">Антикусь, Батеслав, Бига, Брюшкин, Вердми, Вискарёк, Восьмибитка, Гномчиха, Горегоре, Заокном, Иввиготапова, Иеронимус, Картошечька, Кенканеки, Лизана, Мартел, Миклухо, Митруд, Остапблендр, Паспарту, Праймлайт, Рептайлик, Савьер, Саллии, Святоносик, Серёжа, Скормакс, Соседавгн, Страдалица, Технодиджей, Флексид, Фочереп, Харукосама, Хьюджан, Чезара, Яойщик, Рохейн, Рикардс, Нахадан, Непарься, </div>
          <div class="divClass" style="width: 4%;">130</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - оня + рагна<br />(10/12/19 23:53:27) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - оня + рагна<br />(10/12/19 23:53:27) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Митруд, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Митруд, </div>
          <div class="divClass" style="width: 4%;">-100</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:52:08) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:52:08) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Хьюджан, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Хьюджан, </div>
          <div class="divClass" style="width: 4%;">-160</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:51:06) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:51:06) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Батеслав, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Батеслав, </div>
          <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:50:33) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:50:33) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Бига, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Бига, </div>
          <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:50:08) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:50:08) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Рохейн, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рохейн, </div>
          <div class="divClass" style="width: 4%;">20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:50:03) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:50:03) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Бига, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Бига, </div>
          <div class="divClass" style="width: 4%;">-100</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:48:50) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:48:50) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Бига, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Бига, </div>
          <div class="divClass" style="width: 4%;">-100</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:30:38) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:30:38) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Мартел, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Мартел, </div>
          <div class="divClass" style="width: 4%;">-210</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:29:37) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:29:37) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Праймлайт, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Праймлайт, </div>
          <div class="divClass" style="width: 4%;">-150</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:15:50) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:15:50) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Праймлайт, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Праймлайт, </div>
          <div class="divClass" style="width: 4%;">-50</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:14:57) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:14:57) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Горегоре, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Горегоре, </div>
          <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:14:23) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:14:23) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Рептайлик, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рептайлик, </div>
          <div class="divClass" style="width: 4%;">-180</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:03:02) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:03:02) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Фочереп, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Фочереп, </div>
          <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 23:02:14) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 23:02:14) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Картошечька, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Картошечька, </div>
          <div class="divClass" style="width: 4%;">-50</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 22:41:25) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 22:41:25) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Иввиготапова, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Иввиготапова, </div>
          <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 22:40:30) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 22:40:30) </div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Рептайлик, </div>
+         <div class="divPlayer" style="font-size: 1em; width: 71%;">Рептайлик, </div>
          <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 22:26:05) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Иввиготапова, </div>
-         <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 22:25:32) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Иввиготапова, </div>
-         <div class="divClass" style="width: 4%;">-60</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 22:07:49) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Брюшкин, </div>
-         <div class="divClass" style="width: 4%;">-50</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 22:07:15) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Рохейн, </div>
-         <div class="divClass" style="width: 4%;">-120</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 22:06:35) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Рохейн, </div>
-         <div class="divClass" style="width: 4%;">210</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 22:06:29) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Батеслав, </div>
-         <div class="divClass" style="width: 4%;">-100</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 21:49:58) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Чезара, </div>
-         <div class="divClass" style="width: 4%;">-20</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 21:49:07) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Яойщица, </div>
-         <div class="divClass" style="width: 4%;">-90</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 21:34:56) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Страдалица, </div>
-         <div class="divClass" style="width: 4%;">-100</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 21:34:14) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Скормакс, </div>
-         <div class="divClass" style="width: 4%;">-60</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 21:26:31) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Вискарёк, </div>
-         <div class="divClass" style="width: 4%;">-50</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 21:25:45) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Флексид, </div>
-         <div class="divClass" style="width: 4%;">-100</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 20:53:39) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Кенканеки, </div>
-         <div class="divClass" style="width: 4%;">-130</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 20:52:39) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Рептайлик, </div>
-         <div class="divClass" style="width: 4%;">-70</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - -рол шмотки<br />(10/12/19 20:52:08) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Лизана, Брюшкин, Уэйн, </div>
-         <div class="divClass" style="width: 4%;">10</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - банк<br />(10/12/19 18:15:15) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Савьер, Гирам, Сладкийгусь, Кивасик, </div>
-         <div class="divClass" style="width: 4%;">10</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - банк<br />(10/12/19 16:54:56) </div>
-      </div>
-      <div class="divTableRow">
-         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Хьюджан, Чезара, Соседавгн, Восьмибитка, Остапблендр, </div>
-         <div class="divClass" style="width: 4%;">10</div>
-         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - банк <br />(10/11/19 04:13:58) </div>
+         <div class="divDKP" style="width: 25%; font-size: 0.9em;">Other - -рол шмотки<br />(10/12/19 22:26:05) </div>
       </div>
    </div>
 </div>
@@ -656,7 +1665,132 @@ a:link, a:visited { color:black; }
          <div class="divDKPHeader">С кого</div>
       </div>
       <div class="divTableRow">
-         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=14530" data-wowhead="item=14530"></a> (30 DKP)</div>
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16962" data-wowhead="item=16962"></a> (60 DKP)</div>
+         <div class="divClass" style="width: 20%;">Паспарту</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Рагнарос<br />(10/26/19 01:32:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=19137" data-wowhead="item=19137"></a> (140 DKP)</div>
+         <div class="divClass" style="width: 20%;">Яойщик</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Рагнарос<br />(10/26/19 01:31:15) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16930" data-wowhead="item=16930"></a> (70 DKP)</div>
+         <div class="divClass" style="width: 20%;">Гномчиха</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Рагнарос<br />(10/26/19 01:29:41) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=18814" data-wowhead="item=18814"></a> (180 DKP)</div>
+         <div class="divClass" style="width: 20%;">Гномчиха</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Рагнарос<br />(10/26/19 01:28:15) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=18803" data-wowhead="item=18803"></a> (40 DKP)</div>
+         <div class="divClass" style="width: 20%;">Триха</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Мажордом Экзекутус<br />(10/26/19 00:53:45) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16815" data-wowhead="item=16815"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Луриел</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Големагг Испепелитель<br />(10/26/19 00:15:18) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=18842" data-wowhead="item=18842"></a> (180 DKP)</div>
+         <div class="divClass" style="width: 20%;">Раинам</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Големагг Испепелитель<br />(10/26/19 00:14:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16865" data-wowhead="item=16865"></a> (50 DKP)</div>
+         <div class="divClass" style="width: 20%;">Паспарту</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Големагг Испепелитель<br />(10/26/19 00:12:57) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16816" data-wowhead="item=16816"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Луриел</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Предвестник Сульфурон<br />(10/25/19 23:57:28) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16868" data-wowhead="item=16868"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Паспарту</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Предвестник Сульфурон<br />(10/25/19 23:56:13) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=18861" data-wowhead="item=18861"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Эщкерёночек</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Шаззрах<br />(10/25/19 23:34:42) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16828" data-wowhead="item=16828"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Триха</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Шаззрах<br />(10/25/19 23:33:07) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16803" data-wowhead="item=16803"></a> (40 DKP)</div>
+         <div class="divClass" style="width: 20%;">Эшкерее</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Шаззрах<br />(10/25/19 23:28:20) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16801" data-wowhead="item=16801"></a> (60 DKP)</div>
+         <div class="divClass" style="width: 20%;">Реалкек</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Шаззрах<br />(10/25/19 23:26:41) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=17105" data-wowhead="item=17105"></a> (40 DKP)</div>
+         <div class="divClass" style="width: 20%;">Суперолд</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Гарр<br />(10/25/19 22:44:53) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16846" data-wowhead="item=16846"></a> (60 DKP)</div>
+         <div class="divClass" style="width: 20%;">Рыжийвеликан</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Гарр<br />(10/25/19 22:42:29) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16813" data-wowhead="item=16813"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Вазарчик</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Гарр<br />(10/25/19 22:41:15) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16828" data-wowhead="item=16828"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Киво</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Гееннас<br />(10/25/19 22:30:14) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16827" data-wowhead="item=16827"></a> (70 DKP)</div>
+         <div class="divClass" style="width: 20%;">Иммодест</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Гееннас<br />(10/25/19 22:23:23) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16862" data-wowhead="item=16862"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Эщкерёночек</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Гееннас<br />(10/25/19 22:20:38) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=17065" data-wowhead="item=17065"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Эщкерёночек</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Магмадар<br />(10/25/19 22:06:35) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16822" data-wowhead="item=16822"></a> (70 DKP)</div>
+         <div class="divClass" style="width: 20%;">Иммодест</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Магмадар<br />(10/25/19 22:04:16) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16859" data-wowhead="item=16859"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Мисфорнойд</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Люцифрон<br />(10/25/19 21:55:24) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=16863" data-wowhead="item=16863"></a> (20 DKP)</div>
+         <div class="divClass" style="width: 20%;">Эщкерёночек</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Огненные Недра: Люцифрон<br />(10/25/19 21:52:11) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=18500" data-wowhead="item=18500"></a> (100 DKP)</div>
+         <div class="divClass" style="width: 20%;">Киво</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Стальгорн: Lucifron<br />(10/20/19 06:09:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://ru.classic.wowhead.com/item=14530" data-wowhead="item=14530"></a> (30 DKP)</div>
          <div class="divClass" style="width: 20%;">Киво</div>
          <div class="divDKP" style="width: 40%; font-size: 0.7em;">Стальгорн: Lucifron<br />(10/20/19 05:59:32) </div>
       </div>
@@ -664,7 +1798,6 @@ a:link, a:visited { color:black; }
 </div>
 </div>
 </html>
-<html>
 <!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА-->
 <!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА-->
 <!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА--><!-- КОПИПАСТИТЬ ДО СЮДА-->
@@ -701,8 +1834,12 @@ a:link, a:visited { color:black; }
 </div>
 </div>
 
-<div id="Bank" class="tab" style="display:none; width: 25%; margin:auto;" >
-<iframe  src="" width="500" height="500" ></iframe>
+<div id="Bank" class="tab" style="display:none; width: 90%; margin:auto;" >
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwkav7lEQkhisgwgkDFEaPkcB2OLP7EwdcBw4h0dkVLgSwpxovf1hgBaXS_oIezMfTYifgjFzqYrRX/pubhtml?gid=33383667&amp;single=true&amp;widget=true&amp;headers=false" width="1720" height="700"></iframe>
+</div>
+
+<div id="Statics" class="tab" style="display:none; width: 90%; margin:auto;" >
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwkav7lEQkhisgwgkDFEaPkcB2OLP7EwdcBw4h0dkVLgSwpxovf1hgBaXS_oIezMfTYifgjFzqYrRX/pubhtml?gid=1657323463&amp;single=true&amp;widget=true&amp;headers=false" width="1720" height="700"></iframe>
 </div>
 
 </html>
